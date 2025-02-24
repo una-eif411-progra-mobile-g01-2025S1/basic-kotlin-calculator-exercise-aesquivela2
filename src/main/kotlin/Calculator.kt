@@ -1,4 +1,3 @@
-package org.example
 
 class Calculator {
     fun add (a: Double, b: Double): Double a + b
@@ -12,7 +11,7 @@ class Calculator {
             throw undefined("Division by 0 not allowed")
         }
     }
-    fun evaluate(expression: String): Double {
+    fun evaluate(expression: String): Double  {
         // Expresión regular para capturar: número, operador y número.
         val regex = Regex("""^\s*(-?\d+(?:\.\d+)?)\s*([\+\-\*/])\s*(-?\d+(?:\.\d+)?)\s*$""")
         val matchResult = regex.matchEntire(expression)
